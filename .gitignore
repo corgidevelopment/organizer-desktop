@@ -34,26 +34,3 @@ dist-ssr
 /out
 /public/build
 /vite-cache
-
-npm-debug.log*
-yarn-debug.log*
-.eslintcache
-/coverage
-.env
-.env.*
-!.env.example
-*.tsbuildinfo
-/src-tauri/target/
-/src-tauri/target/
-/src-tauri/target.json
-/target
-/src-tauri/target/release
-/src-tauri/target/debug
-/src-tauri/target/target
-
-# Configuration and temporary files
-/bundle.json
-/config.json
-
-# JetBrains IDEs (IntelliJ, WebStorm, etc.)
-.idea/

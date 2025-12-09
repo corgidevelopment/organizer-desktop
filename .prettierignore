@@ -1,0 +1,7 @@
+# Dependency directories
+node_modules
+dist
+target
+
+# Tauri configuration
+src-tauri/target

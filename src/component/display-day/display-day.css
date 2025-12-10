@@ -1,0 +1,11 @@
+.display-day-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    gap: 1em;
+}
+
+.display-day-date-name {
+    font-size: 22px
+}

@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Handlee';
+  src: url('./assets/fonts/Handlee-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, div {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -22,9 +33,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   width: 100%;
   height: 100%;
+}
+
+.today-list-container {
+  aspect-ratio: 1/1.41421356237 ;
+  border: 1px solid grey;
+  width: 105mm;
+  padding: 1em;
+}
+
+.list-paragraph {
+  margin: 0;
+  font-family: 'Handlee';
 }
 
 @media (prefers-color-scheme: dark) {

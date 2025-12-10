@@ -1,3 +1,5 @@
+import './calendar-icon.css'
+
 export type CalendarIconProps = {
   dayNo: number;
   dayName: string;
@@ -13,9 +15,9 @@ function abbrevDayName(dayName: string) {
 
 export function CalendarIcon({ dayName, dayNo }: CalendarIconProps) {
   return (
-    <div>
-      <div>{twoDigitDayNo(dayNo)}</div>
-      <div>{abbrevDayName(dayName)}</div>
+    <div className="cal-icon cal-icon-container">
+      <div className="cal-icon cal-icon-dayno">{twoDigitDayNo(dayNo)}</div>
+      <div className="cal-icon cal-icon-day-abbrev">{abbrevDayName(dayName)}</div>
     </div>
   );
 }

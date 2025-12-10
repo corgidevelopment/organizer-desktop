@@ -1,0 +1,20 @@
+.cal-icon-dayno {
+    font-weight: bold;
+    font-size: 24px;
+    min-width: 2em;
+    text-align: center;
+}
+
+.cal-icon-day-abbrev {
+    font-size: 16px;
+    min-width: 2em;
+    text-align: center;
+}
+
+.cal-icon-container {
+    border: 1px solid green;
+    display: block;
+    place-items: center;
+    width: max-content;
+    aspect-ratio: 1 / 1;
+}

@@ -13,6 +13,8 @@ const ListOnlyDocument = Document.extend({
   content: 'bulletList',
 });
 
+//WindowSize: width: 412, height: 576,
+
 export function TodayList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, _] = useState(1);

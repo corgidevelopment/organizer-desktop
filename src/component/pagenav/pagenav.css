@@ -1,0 +1,9 @@
+.page-nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.page-nav-action {
+    cursor: pointer;
+}

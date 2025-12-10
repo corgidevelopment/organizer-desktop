@@ -1,11 +1,15 @@
 import './display-day.css';
-import { CalendarIcon } from '../calendar-icon/CalendarIcon.tsx';
+import { CalendarIcon, CalendarIconProps } from '../calendar-icon/CalendarIcon.tsx';
 
-export function DisplayDay() {
+export type DisplayDayProps = CalendarIconProps & {
+  dayName: string
+}
+
+export function DisplayDay({ dayNo, dayName }: DisplayDayProps) {
   return (
     <div className="display-day display-day-container">
-      <CalendarIcon dayNo={8} dayName="Dienstag" />
-      <div className="display-day display-day-date-name">Montag</div>
+      <CalendarIcon dayNo={dayNo} dayName={dayName} />
+      <div className="display-day display-day-date-name">{dayName}</div>
     </div>
   );
 }

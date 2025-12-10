@@ -1,4 +1,4 @@
-import './calendar-icon.css'
+import './calendar-icon.css';
 
 export type CalendarIconProps = {
   dayNo: number;

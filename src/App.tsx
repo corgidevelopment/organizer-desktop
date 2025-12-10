@@ -1,5 +1,5 @@
 import './App.css';
-import { TodayList } from './component/TodayList.tsx';
+import { TodayList } from './component/todaylist/TodayList.tsx';
 
 function App() {
   return (

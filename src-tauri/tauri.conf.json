@@ -13,8 +13,9 @@
     "windows": [
       {
         "title": "organizer-desktop",
-        "width": 800,
-        "height": 600
+        "width": 412,
+        "height": 576,
+        "resizable": true
       }
     ],
     "security": {

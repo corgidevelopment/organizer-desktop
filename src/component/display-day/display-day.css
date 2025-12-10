@@ -7,5 +7,14 @@
 }
 
 .display-day-date-name {
-    font-size: 22px
+    font-size: 22px;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .display-day-date-name {
+        border-color: #f6f6f6;
+    }
 }

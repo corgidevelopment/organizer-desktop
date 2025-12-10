@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Handlee';
+    src: url('../../assets/fonts/Handlee-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ProseMirror {
+    flex-grow: 1;
+    min-height: 100%;
+}
+
+.today-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.today-list .ProseMirror {
+    outline: none;
+}
+
+.m-today-list-header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid darkgray;
+}
+
+.today-list-container {
+    aspect-ratio: 1/1.41421356237;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 105mm;
+    padding: 1em;
+}
+
+.list-paragraph {
+    margin: 0;
+    font-family: 'Handlee';
+}
+
+.today-list .today-list-editor-container, .today-list .list-editor {
+    flex-grow: 1;
+    align-self: stretch;
+    justify-self: stretch;
+    place-self: stretch;
+}

@@ -1,10 +1,10 @@
 import './App.css';
-import { TodayList } from './component/todaylist/TodayList.tsx';
+import { WeekTable } from './component/week-table/WeekTable.tsx';
 
 function App() {
   return (
     <div className="container">
-      <TodayList />
+      <WeekTable />
     </div>
   );
 }

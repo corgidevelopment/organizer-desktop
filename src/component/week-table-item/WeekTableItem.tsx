@@ -1,4 +1,4 @@
-import './week-table-item.css'
+import './week-table-item.css';
 import { CalendarIcon } from '../calendar-icon/CalendarIcon.tsx';
 
 export type TypeA = {
@@ -12,13 +12,15 @@ export type WeekViewItemProps = {
   dayOfDate: number
 }
 
-export function WeekTableItem({typeAs, dayOfDate, dayName}: WeekViewItemProps) {
+export function WeekTableItem({ typeAs, dayOfDate, dayName }: WeekViewItemProps) {
   return (<>
     <div className="bg-white col-start-1 col-end-2 week-table week-table-item week-table-item-icon p-1">
       <CalendarIcon border={false} dayName={dayName} dayNo={dayOfDate} />
     </div>
-    {typeAs.map(({id, text}) => <div
-      className="
+    <div className="separator vertical"></div>
+    {typeAs.map(({ id, text }) => <>
+      <div
+        className="
         col-span-1
         text-left
         min-h-12
@@ -30,9 +32,13 @@ export function WeekTableItem({typeAs, dayOfDate, dayName}: WeekViewItemProps) {
         justify-center
         week-table
         week-table-item
-        week-table-item-element"
-      key={id}>
-      <span className="block">{text}</span>
-    </div>)}
-  </>)
+        week-table-item-element
+        px-2
+        "
+        key={id}>
+        <span className="block">{text}</span>
+      </div>
+      <div className="separator vertical"></div>
+    </>)}
+  </>);
 }

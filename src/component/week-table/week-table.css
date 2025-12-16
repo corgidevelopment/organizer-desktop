@@ -1,3 +1,18 @@
 .week-table-grid {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(4, max-content 1px);
+    grid-template-rows: repeat(7,  1px 1fr) 1px;
+}
+
+.separator {
+    background-color: #ccc;
+}
+
+.separator.vertical {
+    height: 100%;
+    width: 1px;
+}
+
+.separator.col-span-full {
+    height: 1px;
+    width: 100%;
 }

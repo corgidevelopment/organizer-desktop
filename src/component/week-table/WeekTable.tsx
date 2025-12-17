@@ -116,7 +116,9 @@ function maximumWeekDataElements(data: WeekTableData) {
   return maximum;
 }
 
-const colRepeat = maximumWeekDataElements(WeekData) + 2;
+const maxElements = maximumWeekDataElements(WeekData)
+
+const colRepeat = maxElements + 2;
 
 const gridStyle = {
   gridTemplateColumns: `repeat(${colRepeat},max-content 1px)`
@@ -127,36 +129,43 @@ export function WeekTable() {
     className={`grid items-center w-fit justify-items-start min-h-[300px] week-table week-table-grid min-w-[300px] m-2`} style={gridStyle}>
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.monday.items}
       dayName="Montag"
       dayOfDate={WeekData.monday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.tuesday.items}
       dayName="Dienstag"
       dayOfDate={WeekData.tuesday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.wednesday.items}
       dayName="Mittwoch"
       dayOfDate={WeekData.wednesday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.thursday.items}
       dayName="Donnerstag"
       dayOfDate={WeekData.thursday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.friday.items}
       dayName="Freitag"
       dayOfDate={WeekData.friday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.saturday.items}
       dayName="Samstag"
       dayOfDate={WeekData.saturday.date} />
     <div className="separator col-span-full"></div>
     <WeekTableItem
+      maxElements={maxElements}
       items={WeekData.sunday.items}
       dayName="Sonntag"
       dayOfDate={WeekData.sunday.date} />

@@ -12,10 +12,13 @@ export type WeekViewItemProps = {
   items: TypeA[]
   dayName: string
   dayOfDate: number
+  maxElements: number
 }
 
-export function WeekTableItem({ items, dayOfDate, dayName }: WeekViewItemProps) {
+export function WeekTableItem({ items, dayOfDate, dayName, maxElements }: WeekViewItemProps) {
 
+  const colStart = items.length
+  const colEnd = maxElements + 2
 
   return (<>
     <div className="bg-white col-start-1 col-end-2 week-table week-table-item week-table-item-icon p-1">
@@ -44,6 +47,6 @@ export function WeekTableItem({ items, dayOfDate, dayName }: WeekViewItemProps) 
       </div>
       <div className="separator vertical"></div>
     </>)}
-    <WeekTableAddTypeA/>
+    <WeekTableAddTypeA end={colEnd} start={colStart}/>
   </>);
 }

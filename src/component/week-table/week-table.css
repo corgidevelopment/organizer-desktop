@@ -1,5 +1,4 @@
 .week-table-grid {
-    grid-template-columns: repeat(4, max-content 1px);
     grid-template-rows: repeat(7,  1px 1fr) 1px;
 }
 
